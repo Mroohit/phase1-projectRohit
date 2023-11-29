@@ -1,0 +1,25 @@
+public class CustomException {
+	public static void main(String args[]) throws AgeLessthanException 
+	{
+	 validateage(-3);
+	}
+	private static void validateage(int age) throws AgeLessthanException{
+		if(age>0) {
+	
+throw new AgeLessthanException("exception raised");
+}
+}
+	}
+
+
+
+public class AgeLessthanException extends Exception{
+	 public AgeLessthanException(){}
+	 public AgeLessthanException(String message) {
+		 super(message);
+		 
+	 }
+public AgeLessthanException(Throwable cause) {
+	super(cause);
+}
+}

@@ -1,0 +1,12 @@
+public class ExceptionHandling {
+	public static void main(String[] args) {
+	    try {
+	      int[] arr = {5, 6, 3,9};
+	      System.out.println(arr[8]);
+	    } catch (Exception c) {
+	      System.out.println("Array index out of bounds exception.");
+	    } finally {
+	      System.out.println("finished.");
+	    }
+	  }
+	}
